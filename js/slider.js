@@ -38,6 +38,8 @@ const app = new Vue ( {
 			} else {
 				this.index = this.index - 1
 			}
+			const prevSlide = slides[this.index];
+			prevSlide.isActive = true;
 		},
 
 		goNextslide() {
